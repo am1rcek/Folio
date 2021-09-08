@@ -145,8 +145,6 @@ a{
 }
 .lists:hover h4{
     cursor: pointer;
-}
-.lists:focus h4{
     color: #495FEF;
 }
 .img{
