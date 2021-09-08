@@ -1,0 +1,214 @@
+html {
+    box-sizing: border-box;
+}
+  
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    perspective: 1000px;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--body-primary-color);
+    overflow-X: hidden;
+}
+  
+img {
+    max-width: 100%;
+    height: auto;
+}
+:root{
+    --text-color: #161C2D;
+    --body-primary-color:#fff;
+    --all-works-color:#5B606C;
+    --header-primary-color:#fff;
+    --header-shadow:3px 3px 20px 15px #f6f6ff;
+    --btn-bg-color:#fff;
+    --explore-btn-shadow:1px 3px 5px 3px #E3E3E3;
+}
+.dark-content{
+    --text-color: #fff;
+    --body-primary-color:#161C2D;
+    --all-works-color:#BABBC0;
+    --header-primary-color:#161C2D;
+    --header-shadow:3px 3px 20px 15px #191E30;
+    --btn-bg-color:#CED4E7;
+    --explore-btn-shadow:1px 3px 5px 3px #1d1b1b;
+}
+ul li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.fulled-container{
+    padding: 0 40px;
+}
+.title{
+    color: var(--text-color);
+    line-height: 35px;
+    font-size: 25   px;
+}
+.nav-bar-list a{
+    color: var(--text-color);
+    font-weight:700;
+    padding: 20px;
+}
+.folio-header{
+    width: 100%;
+    box-shadow: var(--header-shadow);
+    position: fixed;
+    background-color: var(--header-primary-color);
+}
+.hero{
+    padding: 180px 0 100px 0;
+}
+.hero-text{
+    color: var(--text-color);
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 13px;
+    margin: 0;
+    
+}
+.hero-title{
+    color: var(--text-color);
+    font-size: 80px;
+    margin: 0;
+    margin-top: 30px;
+}
+.explore-btn{
+    color: #fff;
+    text-transform: uppercase;
+    background-color: #495FEF;
+    border: none;
+    padding:17px 30px;
+    border-radius: 50px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    font-size: 12px;
+    box-shadow:var(--explore-btn-shadow);
+    margin-top: 60px;
+    transform: translateY(0);
+    transition: transform 0.4s ease;
+}
+.explore-btn:hover{
+    transform: translateY(-15px);
+    cursor: pointer;
+}
+.bx-right-arrow-alt{
+    font-size:30px;
+    margin-left: 20px;
+}
+.mode-btn{
+    border: none;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-size: 13px;
+    padding: 15px 20px;
+}
+.mode-btn:hover{
+    cursor: pointer;
+}
+.light-mode{
+    right: 56px;
+    border-radius: 25px 0 0 25px;
+}
+.dark-mode{
+    background: var(--btn-bg-color);
+    border-radius: 0 25px 25px 0;
+}
+.btn-box{
+    top: 340px;
+    right: 0;
+    position: fixed;
+    background-color:#495FEF;
+    padding: 15px;
+    border-radius: 25px 0 0 25px;
+}
+.lists-box{
+    padding: 0;
+}
+.lists h4{
+    margin-right: 80px;
+    color: var(--all-works-color);
+    font-size: 13px;
+    letter-spacing: 2px;
+    transition: color 0.4s ease;
+}
+.lists h4:hover{
+    color: #495FEF;
+    cursor: pointer;
+}
+.img{
+    padding: 15px;
+}
+.img-pages{
+    position: relative;
+    padding: 0 0 100px 0;
+}
+.img-box{
+    position: absolute;
+    right: -375px;
+}
+.round{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #56B381;
+    margin-right: 10px;
+    display: inline-block;
+}
+.footer-text{
+    color: var(--text-color);
+    letter-spacing: 2px;
+    font-weight: 700;
+    font-size: 15px;
+}
+.roun-text-box{
+    width: 358px;
+    margin:0 auto;
+}
+.footer-title{
+    text-align: center;
+    font-size: 60px;
+    line-height: 70px;
+    color: var(--text-color);
+}
+.lets-talk-now-btn{
+    background: #56B381;
+    color: #fff;
+    text-transform: uppercase;
+    border: none;
+    padding:17px 30px;
+    border-radius: 50px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    font-size: 12px;
+    box-shadow:var(--explore-btn-shadow);
+    transform: translateY(0);
+    transition: transform 0.4s ease;
+    margin:  0 auto;
+}
+.lets-talk-now-btn:hover{
+    transform: translateY(-15px);
+    cursor: pointer;
+}
+.bxs-message-rounded{
+    font-size:25px;
+    margin-right: 17px;
+}
+.reseved{
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 70px;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--text-color);
+}
